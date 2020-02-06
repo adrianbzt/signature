@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SignatureCanvas from "./components/SignatureCanvas";
+import ClearButton from "./components/ClearButton";
+import ClockComponent from "./components/ClockComponent"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className="App-header">
+
+
+                <ClearButton value="Clear Me"
+                             src="https://s.ftcdn.net/v2013/pics/all/curated/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg?r=1a0fc22192d0c808b8bb2b9bcfbf4a45b1793687"
+                             alt="ceva imagine"/>
+                <SignatureCanvas/>
+                <ClockComponent/>
+            </header>
+        </div>
+    );
 }
 
 export default App;
